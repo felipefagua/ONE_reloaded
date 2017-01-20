@@ -1,0 +1,17 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/Sprites/fondos2.tpsheet
+- Assets/Sprites/gui.tpsheet
+- Assets/Sprites/fondos1.tpsheet
+- Assets/Sprites/moon.tpsheet
+textureFileNames:
+- Assets/Sprites/fondos2.png
+- Assets/Sprites/gui.png
+- Assets/Sprites/fondos1.png
+- Assets/Sprites/moon.png
+normalmapFileNames:
+- 
+- 
+- 
+- 

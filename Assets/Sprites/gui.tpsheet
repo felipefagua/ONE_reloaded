@@ -1,0 +1,34 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:592c2251909b4ec47c2e8a5be245e2dd:ca0fb430ad762a45c7c987930a95f9c1:815866c4c46af935d0bce530a96dd3a9$
+#
+:format=40000
+:texture=gui.png
+:size=2048x4096
+
+Boton_Cerrar;1799;3967;128;128;0.5;0.5
+Boton_Menu_Externo;1799;3837;128;128;0.5;0.5
+Boton_Menu_Interno;1799;3707;128;128;0.5;0.5
+Loading_Dot;1980;3968;45;45;0.5;0.5
+Multiplayer_icon;1027;3583;512;512;0.5;0.5
+barra_borde;1929;4015;80;80;0.5;0.5
+barra_relleno;1929;3968;49;45;0.5;0.5
+base_transparency;1027;3069;512;512;0.5;0.5
+border_button;1027;2555;512;512;0.5;0.5
+boton_mover;1027;2041;512;512;0.5;0.5
+conte_pequeño;1541;3839;256;256;0.5;0.5
+gameover;1;373;512;128;0.5;0.5
+letra;1;1531;512;512;0.5;0.5
+linea;1;1017;512;512;0.5;0.5
+logo;1;503;512;512;0.5;0.5
+main;1541;3581;256;256;0.5;0.5
+menu;1;3071;1024;1024;0.5;0.5
+menu_one;515;1527;512;512;0.5;0.5
+options_icon;1029;1527;512;512;0.5;0.5
+semicirculos_menu;1;2045;1024;1024;0.5;0.5
+singleplayer_icon;515;1013;512;512;0.5;0.5
+try_again;1541;3323;256;256;0.5;0.5

@@ -1,0 +1,389 @@
+fileFormatVersion: 2
+guid: 01c4575f195b0694b9892166aeabfdc0
+timeCreated: 1460758640
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Boton_Cerrar
+    21300002: Boton_Menu_Externo
+    21300004: Boton_Menu_Interno
+    21300006: Menu_Pantalla
+    21300008: marco_Boton
+    21300010: menu_one
+    21300012: multi_player
+    21300014: semicirculos_menu
+    21300016: single_player
+    21300018: gameover
+    21300020: halo
+    21300022: letra
+    21300024: logo
+    21300026: Boton_Option
+    21300028: boton_multiplayer
+    21300030: boton_options
+    21300032: boton_singleplayer
+    21300034: Boton_borde
+    21300036: Boton_transparencia
+    21300038: credits
+    21300040: leaderboard
+    21300042: mainmenu
+    21300044: multiplayer
+    21300046: myscore
+    21300048: options
+    21300050: play
+    21300052: resume
+    21300054: retry
+    21300056: singleplayer
+    21300058: barra_borde
+    21300060: barra_relleno
+    21300062: Multiplayer_icon
+    21300064: base_transparency
+    21300066: border_button
+    21300068: options_icon
+    21300070: singleplayer_icon
+    21300072: "conte_peque\xF1o"
+    21300074: main
+    21300076: try_again
+    21300078: Loading_Dot
+    21300080: boton_mover
+    21300082: linea
+    21300084: men_ingame
+    21300086: menu
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boton_Cerrar
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 3967
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Boton_Menu_Externo
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 3837
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Boton_Menu_Interno
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 3707
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Loading_Dot
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 3968
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Multiplayer_icon
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 3583
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barra_borde
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 4015
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barra_relleno
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 3968
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: base_transparency
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 3069
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: border_button
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 2555
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: boton_mover
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 2041
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: "conte_peque\xF1o"
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 3839
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: gameover
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 373
+        width: 512
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letra
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1531
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: linea
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1017
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: logo
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 503
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: main
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 3581
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: menu
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3071
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: menu_one
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1527
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: options_icon
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1527
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: semicirculos_menu
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2045
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: singleplayer_icon
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1013
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: try_again
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 3323
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

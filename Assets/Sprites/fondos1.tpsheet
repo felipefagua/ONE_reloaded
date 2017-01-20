@@ -1,0 +1,16 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:70b29d4c31698b6caaee6916d62dd2b3:cf3ba8a416e8543e52378fad803bf1bc:b170ef79b3c8ba4c4fe0d0f2406a4548$
+#
+:format=40000
+:texture=fondos1.png
+:size=1024x2048
+
+destelloindependiente;843;985;136;152;0.5;0.5
+diseño;1;297;840;840;0.5;0.5
+puntos;1;1139;908;908;0.5;0.5
+trianguloindependiente;911;1995;64;52;0.5;0.5

@@ -1,0 +1,371 @@
+fileFormatVersion: 2
+guid: ab1e3d0ace796bb43a289416c586eb59
+timeCreated: 1456957625
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: moon1
+    21300002: moon10
+    21300004: moon11
+    21300006: moon12
+    21300008: moon13
+    21300010: moon14
+    21300012: moon2
+    21300014: moon3
+    21300016: moon4
+    21300018: moon5
+    21300020: moon6
+    21300022: moon7
+    21300024: moon8
+    21300026: moon9
+    21300028: slider1
+    21300030: slider2
+    21300032: arrow
+    21300034: centerbig
+    21300036: centermedium
+    21300038: centersmal
+    21300040: core1
+    21300042: core2
+    21300044: core3
+    21300046: BUTTON1
+    21300048: BUTTON2
+    21300050: Btn_Back
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BUTTON1
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 134
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BUTTON2
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 134
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Btn_Back
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 262
+        width: 306
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrow
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 159
+        width: 102
+        height: 101
+      alignment: 9
+      pivot: {x: 0.49019608, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: core1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1535
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: core2
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 262
+        width: 391
+        height: 393
+      alignment: 9
+      pivot: {x: 0.49872124, y: 0.50127226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: core3
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 657
+        width: 404
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon1
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 56
+        width: 259
+        height: 490
+      alignment: 9
+      pivot: {x: 0.9459459, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon10
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1556
+        width: 491
+        height: 491
+      alignment: 9
+      pivot: {x: 0.49898168, y: 0.50101835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 548
+        width: 491
+        height: 491
+      alignment: 9
+      pivot: {x: 0.49898168, y: 0.50101835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon12
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1556
+        width: 491
+        height: 491
+      alignment: 9
+      pivot: {x: 0.49898168, y: 0.50101835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1041
+        width: 492
+        height: 492
+      alignment: 9
+      pivot: {x: 0.49796748, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon2
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 548
+        width: 318
+        height: 491
+      alignment: 9
+      pivot: {x: 0.7704403, y: 0.50101835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon3
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 570
+        width: 372
+        height: 491
+      alignment: 9
+      pivot: {x: 0.6586022, y: 0.50101835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon4
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 570
+        width: 419
+        height: 491
+      alignment: 9
+      pivot: {x: 0.58472556, y: 0.50101835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon5
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 1063
+        width: 455
+        height: 491
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.50101835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon6
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1063
+        width: 479
+        height: 491
+      alignment: 9
+      pivot: {x: 0.51148224, y: 0.50101835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 55
+        width: 491
+        height: 491
+      alignment: 9
+      pivot: {x: 0.49898168, y: 0.50101835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon8
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 1556
+        width: 491
+        height: 491
+      alignment: 9
+      pivot: {x: 0.49898168, y: 0.50101835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: moon9
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1063
+        width: 491
+        height: 491
+      alignment: 9
+      pivot: {x: 0.49898168, y: 0.50101835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: slider1
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 314
+        width: 488
+        height: 254
+      alignment: 9
+      pivot: {x: 0.49795082, y: 0.10236221}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: slider2
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 58
+        width: 488
+        height: 254
+      alignment: 9
+      pivot: {x: 0.49795082, y: 0.8976378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
