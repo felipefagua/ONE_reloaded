@@ -7,6 +7,8 @@ using System.Collections;
 
 public class MainMenuController : IMainMenuController {
 
+    public static MainMenuController instance;
+
     public float AngularSpeed;
     public float AnimationTime;
     Transform m_BtnSinglePlayer;
@@ -24,8 +26,11 @@ public class MainMenuController : IMainMenuController {
     protected float m_Time;
     protected bool m_IsSingleScore;
 
-	// Use this for initialization
-	void Start () {
+    private void Awake() {
+        instance = this;
+    }
+
+    private void Start () {
 
         m_BtnSinglePlayer = transform.FindChild("BtnSinglePlayer");
         m_BtnMultiPlayer = transform.FindChild("BtnMultiPlayer");
@@ -231,6 +236,10 @@ public class MainMenuController : IMainMenuController {
         this.StartCoroutine(OptionsCoroutine("Parameters"));
     }
 
+    public void OnTutorial() {
+        StartCoroutine(OptionsCoroutine("Tutorial"));
+    }
+
     public IEnumerator OptionsCoroutine(string option)
     {
         this.GetComponent<AudioSource>().Play();
@@ -241,6 +250,10 @@ public class MainMenuController : IMainMenuController {
 
         switch (option)
         {
+            case "Tutorial":
+                Persistence.SelectedGameMode = "test_scene_tutorial";
+                SceneManager.LoadScene("Loading", LoadSceneMode.Single);
+                break;
             case "SinglePlay":
                 Persistence.SelectedGameMode = "SimpleGame";
                 SceneManager.LoadScene("Loading", LoadSceneMode.Single);

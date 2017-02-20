@@ -52,6 +52,7 @@ public class TutorialMenuController : MonoBehaviour {
     }
 
     public void GotoMainMenu() {
+        LocalDataController.instance.hasPassTutorial = true;
         SceneManager.UnloadScene(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(_menuController.mainMenuSceneName, LoadSceneMode.Single);
     }

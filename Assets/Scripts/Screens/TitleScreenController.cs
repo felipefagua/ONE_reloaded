@@ -38,18 +38,28 @@ public class TitleScreenController : MonoBehaviour {
         }
 	}
 
-    public void StartMenu()
-    {
-        iTween.ColorTo(GameObject.Find("logoon"), new Color(0, 0, 0, 0), 1.0f); 
-        iTween.ColorTo(GameObject.Find("logooff"), new Color(0, 0, 0, 0), 1.0f); 
-        iTween.ColorTo(GameObject.Find("halo"), new Color(0, 0, 0, 0), 1.0f); 
-        iTween.ColorTo(GameObject.Find("destello"), new Color(0, 0, 0, 0), 1.0f); 
+    public void StartMenu() {
+        if (LocalDataController.instance.hasPassTutorial)
+            GotoMainMenu();
+        else
+            GotoTutorialScene();
+    }
+
+    public void GotoMainMenu() {
+        iTween.ColorTo(GameObject.Find("logoon"), new Color(0, 0, 0, 0), 1.0f);
+        iTween.ColorTo(GameObject.Find("logooff"), new Color(0, 0, 0, 0), 1.0f);
+        iTween.ColorTo(GameObject.Find("halo"), new Color(0, 0, 0, 0), 1.0f);
+        iTween.ColorTo(GameObject.Find("destello"), new Color(0, 0, 0, 0), 1.0f);
 
         m_Info.GetComponent<Text>().enabled = false;
         m_TouchScreen.GetComponent<Image>().enabled = false;
         m_TouchScreen.GetComponent<Button>().enabled = false;
 
         _menuController.Show();
+    }
+
+    private void GotoTutorialScene() {
+        MainMenuController.instance.OnTutorial();
     }
 
     public void EnableInfo()
