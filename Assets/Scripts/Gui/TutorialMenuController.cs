@@ -21,6 +21,12 @@ public class TutorialMenuController : MonoBehaviour {
     }
 
     [SerializeField]
+    private GameObject _leftTrial;
+
+    [SerializeField]
+    private GameObject _rightTrial;
+
+    [SerializeField]
     private TutorialStep _currentTutorialStep = TutorialStep.none;
 
     [SerializeField]
@@ -59,6 +65,12 @@ public class TutorialMenuController : MonoBehaviour {
     public void TutorialResume() {
         _menuController.OnResume();
         HideAllTutorialGameObjects();
+        ShowTrials();
+    }
+
+    private void ShowTrials() {
+        _leftTrial.SetActive(true);
+        _rightTrial.SetActive(true);
     }
 
     private void ShowCurrentTutorialGameObject() {

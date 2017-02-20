@@ -38,8 +38,7 @@ public class MenuController : MonoBehaviour
             m_Dialog.transform.localScale = Vector3.zero;
             this.EnablePauseButton(false);
 
-            Time.timeScale = 0.0f; 
-
+            Time.timeScale = 0.0f;
             m_Fade.GetComponent<Image>().color = new Color(0, 0, 0, 0.75f);
         }
     }    

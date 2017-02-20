@@ -30,4 +30,12 @@ public class ScreenObjectFollower : MonoBehaviour {
             _myTransform.position = screenObjectWorldPosition;
         }
     }
+
+    public void Hide() {
+        gameObject.SetActive(false);
+    }
+
+    public void Show() {
+        gameObject.SetActive(true);
+    }
 }

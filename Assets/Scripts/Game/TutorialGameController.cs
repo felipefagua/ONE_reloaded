@@ -18,6 +18,24 @@ public class TutorialGameController : GameController {
     #region Editor fields
 
     [SerializeField]
+    private GameObject _leftTrial;
+
+    [SerializeField]
+    private GameObject _rightTrial;
+
+    [SerializeField]
+    private GameObject _UIPauseButton;
+
+    [SerializeField]
+    private GameObject _UILivesCounter;
+
+    [SerializeField]
+    private GameObject _UIXPBar;
+
+    [SerializeField]
+    private GameObject _UIScore;
+
+    [SerializeField]
     private TutorialState _tutorialState;
 
     [SerializeField]
@@ -60,6 +78,7 @@ public class TutorialGameController : GameController {
         _tutorialMenu = FindObjectOfType<TutorialMenuController>();
         _tutorialInput = FindObjectOfType<TutorialInputController>();
         InitTutorialPlayer();
+        HideTutorialUI();
     }
 
     private void InitTutorialPlayer() {
@@ -80,7 +99,7 @@ public class TutorialGameController : GameController {
             return false;
 
         if (_tutorialState == TutorialState.waitingToFail) {
-            if(afinity == EAfinityType.BAD)
+            if (afinity == EAfinityType.BAD)
                 return true;
             else
                 return false;
@@ -118,6 +137,8 @@ public class TutorialGameController : GameController {
     }
 
     private void SetUpNextTutorialLevel() {
+        DestroyMoons();
+        HideTrials();
         _currentCount = 0;
 
         if (_tutorialState == TutorialState.leftController) {
@@ -127,15 +148,19 @@ public class TutorialGameController : GameController {
             _tutorialMenu.ShowTutorial(TutorialMenuController.TutorialStep.bothControllers);
             _tutorialInput.botInputType = TutorialInputController.InputType.both;
         } else if (_tutorialState == TutorialState.bothControllers) {
+            ShowPauseButton();
             _tutorialMenu.ShowTutorial(TutorialMenuController.TutorialStep.pause_button);
             _tutorialInput.botInputType = TutorialInputController.InputType.none;
         } else if (_tutorialState == TutorialState.waitingToFail) {
+            ShowLivesCounter();
             _tutorialMenu.ShowTutorial(TutorialMenuController.TutorialStep.lives_counter);
             _tutorialInput.botInputType = TutorialInputController.InputType.both;
         } else if (_tutorialState == TutorialState.incrementXP) {
+            ShowXPBar();
             _tutorialMenu.ShowTutorial(TutorialMenuController.TutorialStep.xp_counter);
             _tutorialInput.botInputType = TutorialInputController.InputType.both;
         } else if (_tutorialState == TutorialState.incrementScore) {
+            ShowScoreUI();
             _tutorialMenu.ShowTutorial(TutorialMenuController.TutorialStep.score_counter);
         } else if (_tutorialState == TutorialState.tutorialEnding) {
             _tutorialMenu.ShowTutorial(TutorialMenuController.TutorialStep.tutorial_ending);
@@ -143,8 +168,57 @@ public class TutorialGameController : GameController {
         _tutorialState = (TutorialState)(((int)_tutorialState) + 1);
     }
 
-    #endregion
+    private void DestroyMoons() {
+        MoonController[] moons = FindObjectsOfType<MoonController>();
 
+        foreach (MoonController moon in moons)
+        {
+            Destroy(moon.gameObject);
+        }
+    }
+
+    private void HideTutorialUI() {
+        HidePauseButton();
+        //_UIPauseButton.SetActive(false);
+        _UILivesCounter.SetActive(false);
+        _UIXPBar.SetActive(false);
+        _UIScore.SetActive(false);
+    }
+
+    private void HideTrials() {
+        _leftTrial.SetActive(false);
+        _rightTrial.SetActive(false);
+    }   
+
+    private void HidePauseButton() {
+        Vector3 localScale = _UIPauseButton.transform.localScale;
+        localScale.x = 0;
+
+        _UIPauseButton.transform.localScale = localScale;        
+    }
+
+    private void ShowPauseButton() {
+        Vector3 localScale = _UIPauseButton.transform.localScale;
+        localScale.x = 0.35f;
+
+        _UIPauseButton.transform.localScale = localScale;
+        _UIPauseButton.GetComponent<Animator>().Stop();
+    }
+
+    private void ShowLivesCounter() {
+        _UILivesCounter.SetActive(true);
+    }
+
+    private void ShowXPBar() {
+        _UIXPBar.SetActive(true);        
+    }
+
+    private void ShowScoreUI() {
+        _UIScore.SetActive(true);
+    }
+
+    #endregion
+    
     #region Start
 
     protected override void InitGameController() {

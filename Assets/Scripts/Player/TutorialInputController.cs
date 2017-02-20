@@ -115,10 +115,10 @@ public class TutorialInputController : InputController {
 
         if (_currentSemicircleTarget != null) {
             SetRotationTargets();
-            if (_botInputType == InputType.left)
+            if (_botInputType == InputType.left && !ApplicationPause.instance.isPaused)
                 RotateLeftController();
 
-            if (_botInputType == InputType.right)
+            if (_botInputType == InputType.right && !ApplicationPause.instance.isPaused)
                 RotateRightController();
         }
     }

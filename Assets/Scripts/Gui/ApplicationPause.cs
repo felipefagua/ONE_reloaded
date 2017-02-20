@@ -4,21 +4,27 @@ using System.Collections;
 
 public class ApplicationPause : MonoBehaviour
 {
+    public static ApplicationPause instance { get; set; }
+
+    public bool isPaused { get; set; }
 
     protected bool m_IsPaused = false;
     protected float m_Time = 0;
 
+    public void Awake() {
+        instance = this;
+    }
+
     // Use this for initialization
-    void Start()
-    {
+    private void Start() {
         this.transform.FindChild("Image").GetComponent<Image>().enabled = false;
         this.transform.FindChild("Text1").gameObject.SetActive(false);
         this.transform.FindChild("Text2").gameObject.SetActive(false);
         this.transform.FindChild("Text3").gameObject.SetActive(false);
     }
 
-    void EndPause()
-    {
+    private void EndPause() {
+        isPaused = false;
         m_IsPaused = false;
         this.transform.FindChild("Image").GetComponent<Image>().enabled = false;
         this.transform.FindChild("Text1").gameObject.SetActive(false);
@@ -44,5 +50,6 @@ public class ApplicationPause : MonoBehaviour
         this.transform.FindChild("Text1").gameObject.SetActive(true);
 
         Time.timeScale = 0;
+        isPaused = true;
     }
 }
