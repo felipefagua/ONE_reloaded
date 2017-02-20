@@ -29,7 +29,7 @@ public class LocalDataController {
         
     }
 
-    private void CleanLocalData() {
+    public void CleanLocalData() {
         hasPassTutorial = false;
     }
 }

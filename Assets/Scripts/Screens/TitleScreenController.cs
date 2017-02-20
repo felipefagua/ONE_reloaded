@@ -59,7 +59,7 @@ public class TitleScreenController : MonoBehaviour {
     }
 
     private void GotoTutorialScene() {
-        MainMenuController.instance.OnTutorial();
+        _menuController.OnTutorial();
     }
 
     public void EnableInfo()

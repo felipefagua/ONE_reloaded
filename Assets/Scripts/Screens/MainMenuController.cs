@@ -236,7 +236,7 @@ public class MainMenuController : IMainMenuController {
         this.StartCoroutine(OptionsCoroutine("Parameters"));
     }
 
-    public void OnTutorial() {
+    public override void OnTutorial() {
         StartCoroutine(OptionsCoroutine("Tutorial"));
     }
 

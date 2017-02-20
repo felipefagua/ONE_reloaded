@@ -408,6 +408,7 @@
     <Compile Include="Assets\Scripts\Utils\RenderOrder.cs" />
     <Compile Include="Assets\Scripts\Utils\ReverseNormals.cs" />
     <Compile Include="Assets\Scripts\Utils\ScrollBackground.cs" />
+    <Compile Include="Assets\Scripts\localData\LocalDataController.cs" />
     <Compile Include="Assets\Scripts\ui\FaderState.cs" />
     <Compile Include="Assets\Scripts\ui\UIFader.cs" />
     <Compile Include="Assets\Scripts\ui\UIImageRotator.cs" />

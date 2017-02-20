@@ -42,6 +42,10 @@ public class NewMainMenuController : IMainMenuController {
         SceneManager.LoadScene("Loading", LoadSceneMode.Single);
     }
 
+    public void CleanLocalData() {
+        LocalDataController.instance.CleanLocalData();
+    }
+
     public void ShowSinglePlayerPanel() {
         ShowPanel(_singlePlayerPanel, _singlePlayerPanelBackgorund);
     }
@@ -81,5 +85,10 @@ public class NewMainMenuController : IMainMenuController {
     private void HidePanel(Transform panel) {
         panel.gameObject.SetActive(false);
         panel.localScale = new Vector3(0, 0, 0);
+    }
+
+    public override void OnTutorial() {
+        Persistence.SelectedGameMode = "test_scene_tutorial";
+        SceneManager.LoadScene("Loading", LoadSceneMode.Single);
     }
 }

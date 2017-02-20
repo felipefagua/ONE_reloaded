@@ -27,8 +27,8 @@ public class OptionsMenuController : MonoBehaviour {
     public Image _lblSoundOff;
 
     private void Start() {
-        InitMusicButton();
-        InitSoundButton();
+        //InitMusicButton();
+        //InitSoundButton();
         HideOptionsButtons();
     }
 
