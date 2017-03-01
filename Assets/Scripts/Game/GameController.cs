@@ -271,12 +271,12 @@ public class GameController : MonoBehaviour
 
         Persistence.SaveSingleGame(_player.TotalScore, _player.TotalExperience, _player.GameTime);
         Persistence.Save();
-
+        /*
         Social.ReportScore(_player.TotalScore, GPGIds.leaderboard_top_one_gamers, (bool sucess) =>
             {
             
             });
-            
+            */
         SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
     }
 
