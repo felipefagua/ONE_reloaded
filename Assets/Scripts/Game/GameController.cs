@@ -106,13 +106,15 @@ public class GameController : MonoBehaviour
 
             _generator.DestroyMoons();
             _generator.enabled = false;
-
+			/*
             if (!m_UseContinue && Application.internetReachability == NetworkReachability.ReachableViaLocalAreaNetwork) {
                 this.StartCoroutine(DeathOrContinue());
                 m_UseContinue = true;
             } else {
                 this.StartCoroutine(GameOverCoroutine());
             }
+            */
+			this.StartCoroutine(GameOverCoroutine());
         }
     }
 

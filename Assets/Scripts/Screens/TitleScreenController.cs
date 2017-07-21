@@ -39,11 +39,14 @@ public class TitleScreenController : MonoBehaviour {
 	}
 
     public void StartMenu() {
+		/*
         if (LocalDataController.instance.hasPassTutorial)
             GotoMainMenu();
         else
             GotoTutorialScene();
-    }
+		*/
+		GotoMainMenu ();
+	}
 
     public void GotoMainMenu() {
         iTween.ColorTo(GameObject.Find("logoon"), new Color(0, 0, 0, 0), 1.0f);

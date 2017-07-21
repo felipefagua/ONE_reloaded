@@ -6,7 +6,7 @@ using ChartboostSDK;
 using System.Collections;
 using System;
 
-public class GameOverController : MonoBehaviour
+public class MyScoreController : MonoBehaviour
 {
     public Text TextScore;
     public Text TextTime;
@@ -38,9 +38,9 @@ public class GameOverController : MonoBehaviour
         this.transform.localScale = Vector3.one;
         HighScore.transform.localScale = Vector3.zero;
 
-        this.StartCoroutine(OnTextCoroutine(TextScore, Persistence.Data.LastGame.Score, "number"));
-        this.StartCoroutine(OnTextCoroutine(TextTime, Persistence.Data.LastGame.Time, "time"));
-        this.StartCoroutine(OnTextCoroutine(TextExperience, Persistence.Data.LastGame.Experience, "float"));
+		this.StartCoroutine(OnTextCoroutine(TextScore, Persistence.Data.TopGame.Score, "number"));
+		this.StartCoroutine(OnTextCoroutine(TextTime, Persistence.Data.TopGame.Time, "time"));
+		this.StartCoroutine(OnTextCoroutine(TextExperience, Persistence.Data.TopGame.Experience, "float"));
     }
 
     IEnumerator OnTextCoroutine(Text text, float value, string type)
@@ -102,10 +102,9 @@ public class GameOverController : MonoBehaviour
 
     public void MainMenu()
     {
-		/*
         if (Advertisement.IsReady())
             Advertisement.Show();
-		*/
+
         this.StartCoroutine(OnAction("mainmenu"));
     }
 
@@ -114,11 +113,11 @@ public class GameOverController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         switch(action)
         {
-            case "tryagain":  
-                SceneManager.UnloadScene(Persistence.SelectedGameMode);
-                SceneManager.LoadScene("Loading", LoadSceneMode.Single);
+		case "tryagain":  
+			SceneManager.UnloadScene (Persistence.SelectedGameMode);
+            SceneManager.LoadScene("Loading", LoadSceneMode.Single);
                 break;
-            case "mainmenu":
+      	case "mainmenu":
                 SceneManager.UnloadScene(Persistence.SelectedGameMode);
                 SceneManager.LoadScene("main_menu", LoadSceneMode.Single);
                 break;

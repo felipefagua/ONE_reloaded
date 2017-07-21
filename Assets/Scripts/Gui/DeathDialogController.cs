@@ -8,10 +8,11 @@ public class DeathDialogController : MonoBehaviour {
     public System.Action OnContinue;
     public System.Action OnGameOver;
 
-    Vector3 m_Scale;
+	[SerializeField]
+	Vector3 m_Scale;
 	void Awake()
 	{
-		m_Scale = this.transform.localScale;
+		//m_Scale = this.transform.localScale;
 	}
 	// Use this for initialization
 	void Start () {
