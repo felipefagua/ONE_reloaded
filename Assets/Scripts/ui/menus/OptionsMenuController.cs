@@ -75,11 +75,11 @@ public class OptionsMenuController : MonoBehaviour {
 
     public void ToggleMusic() {
         _lblMusicOn.gameObject.SetActive(!_lblMusicOn.gameObject.activeSelf);
-        _lblMusicOff.gameObject.SetActive(!_lblMusicOff.gameObject.activeSelf);
+        _lblMusicOff.gameObject.SetActive(!_lblMusicOn.gameObject.activeSelf);
     }
 
     public void ToggleSound() {
         _lblSoundOn.gameObject.SetActive(!_lblSoundOn.gameObject.activeSelf);
-        _lblSoundOff.gameObject.SetActive(!_lblSoundOff.gameObject.activeSelf);
+        _lblSoundOff.gameObject.SetActive(!_lblSoundOn.gameObject.activeSelf);
     }
 }

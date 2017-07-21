@@ -27,8 +27,8 @@ public abstract class Persistence
                 else
                 {
                     m_Data = new GameData();
-                    m_Data.LastGame = new PlayData();
-                    m_Data.TopGame = new PlayData();
+					m_Data.LastGame = new PlayData() { Score = 0, Experience = 0, Time = 0 };
+					m_Data.TopGame = new PlayData(){ Score = 0, Experience = 0, Time = 0, IsHighScore = true } ;
                 }
             }
  
@@ -80,7 +80,7 @@ public class GameData
 public class PlayData
 {
     [SerializeField]
-    public int Score;
+	public int Score;
     [SerializeField]
     public float Experience;
     [SerializeField]

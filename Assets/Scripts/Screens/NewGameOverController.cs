@@ -32,6 +32,9 @@ public class NewGameOverController : MonoBehaviour {
 
     private void StartAnimation(CircularProgressBar progressBar, float lastGameData, float topGameData) {
         progressBar.SetProgressRange(0, topGameData);
-        progressBar.StartAnimation(lastGameData / topGameData);
+		if(topGameData == 0)
+			progressBar.StartAnimation(0);
+		else
+			progressBar.StartAnimation(lastGameData / topGameData);
     }
 }
