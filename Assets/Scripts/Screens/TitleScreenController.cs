@@ -39,13 +39,10 @@ public class TitleScreenController : MonoBehaviour {
 	}
 
     public void StartMenu() {
-		/*
         if (LocalDataController.instance.hasPassTutorial)
             GotoMainMenu();
         else
             GotoTutorialScene();
-		*/
-		GotoMainMenu ();
 	}
 
     public void GotoMainMenu() {
