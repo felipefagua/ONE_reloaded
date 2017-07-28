@@ -30,7 +30,7 @@ public class TutorialMenuController : MonoBehaviour {
     private TutorialStep _currentTutorialStep = TutorialStep.none;
 
     [SerializeField]
-    private GameObject[] _tutorialGameObjects;
+	private TutorialStepObject[] _tutorialGameObjects;
 
     private MenuController _menuController;
 
@@ -81,7 +81,7 @@ public class TutorialMenuController : MonoBehaviour {
     }
 
     private void HideAllTutorialGameObjects() {
-        foreach (GameObject tutorialGameObject in _tutorialGameObjects)
+		foreach (TutorialStepObject tutorialGameObject in _tutorialGameObjects)
             tutorialGameObject.SetActive(false);
     }
 }

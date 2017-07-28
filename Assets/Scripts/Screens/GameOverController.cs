@@ -96,7 +96,7 @@ public class GameOverController : MonoBehaviour
 
     public void TryAgain()
     {
-        Chartboost.showInterstitial(CBLocation.Default);
+        //Chartboost.showInterstitial(CBLocation.Default);
         this.StartCoroutine(OnAction("tryagain"));
     }
 

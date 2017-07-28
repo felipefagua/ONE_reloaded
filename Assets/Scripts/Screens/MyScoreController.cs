@@ -94,17 +94,12 @@ public class MyScoreController : MonoBehaviour
         }
     }
 
-    public void TryAgain()
-    {
-        Chartboost.showInterstitial(CBLocation.Default);
-        this.StartCoroutine(OnAction("tryagain"));
-    }
-
     public void MainMenu()
     {
+		/*
         if (Advertisement.IsReady())
             Advertisement.Show();
-
+		*/
         this.StartCoroutine(OnAction("mainmenu"));
     }
 
@@ -112,12 +107,8 @@ public class MyScoreController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         switch(action)
-        {
-		case "tryagain":  
-			SceneManager.UnloadScene (Persistence.SelectedGameMode);
-            SceneManager.LoadScene("Loading", LoadSceneMode.Single);
-                break;
-      	case "mainmenu":
+        {	
+      		case "mainmenu":
                 SceneManager.UnloadScene(Persistence.SelectedGameMode);
                 SceneManager.LoadScene("main_menu", LoadSceneMode.Single);
                 break;
