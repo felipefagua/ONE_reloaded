@@ -16,6 +16,6 @@ public class LogoController : MonoBehaviour {
 
     void BeginGame()
     {
-        SceneManager.LoadScene("main_menu", LoadSceneMode.Single);
+        SceneManager.LoadScene("PostTitle", LoadSceneMode.Single);
     }
 }
