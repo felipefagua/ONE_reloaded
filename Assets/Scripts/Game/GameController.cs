@@ -7,6 +7,7 @@ using ChartboostSDK;
 
 public class GameController : MonoBehaviour
 {
+	private IGameAnalytics analytics;
 
     protected PlayerController _player;
     protected MoonGenerator _generator;
@@ -56,6 +57,7 @@ public class GameController : MonoBehaviour
         Background = GameObject.Find("Background").GetComponent<BackController>();
         DeathDialog = GameObject.Find("DeathDialog").GetComponent<DeathDialogController>();
         Music = GameObject.Find("Music").GetComponent<MusicController>();
+		analytics = GameObject.Find("Analytics").GetComponent<IGameAnalytics>();
     }
 
     // Use this for initialization
@@ -174,6 +176,7 @@ public class GameController : MonoBehaviour
     protected virtual void UpdatePlayerLives() {
         if (_player.CurrentLife < _player.Lifes) {
             _player.CurrentLife++;
+			analytics.GainedALife ();
             _player.OnUpdateLives();
         }
     }
@@ -255,11 +258,12 @@ public class GameController : MonoBehaviour
         _generator.enabled = true;
     }
 
-    public void OnGameOver() {       
+    public void OnGameOver() {
         this.StartCoroutine(GameOverCoroutine());
     }
 
-    IEnumerator GameOverCoroutine() {        
+	IEnumerator GameOverCoroutine() {          
+		analytics.GameOver();     
         GameObject black = GameObject.Instantiate(BlackHole, this.transform.position, Quaternion.identity) as GameObject;
         black.transform.localScale = Vector3.one * 3;
         black.GetComponent<SpriteRenderer>().sortingLayerName = "Frente";

@@ -7,6 +7,7 @@ public class MenuController : MonoBehaviour
 {
     [SerializeField]
     private string _mainMenuSceneName;
+	private IGameAnalytics analytics;
     protected Vector3 m_Scale;
     protected Vector3 m_DialogScale;
     protected GameObject m_PauseButton1;
@@ -18,11 +19,13 @@ public class MenuController : MonoBehaviour
     public string mainMenuSceneName { get { return _mainMenuSceneName; } }
 
     private void Awake() {
-        m_Scale = this.transform.localScale;
-        this.transform.localScale = Vector3.zero;
+		m_Scale = this.transform.localScale;
+		this.transform.localScale = Vector3.zero;
 
-        m_PauseButton1 = GameObject.Find("BtnPause");
-        m_PauseButton2 = GameObject.Find("BtnPause2");
+		m_PauseButton1 = GameObject.Find ("BtnPause");
+		m_PauseButton2 = GameObject.Find ("BtnPause2");
+
+		analytics = GameObject.Find("Analytics").GetComponent<IGameAnalytics>();
 
         m_Dialog = GameObject.Find("Dialog");
         m_DialogScale = m_Dialog.transform.localScale;
@@ -98,9 +101,10 @@ public class MenuController : MonoBehaviour
         this.GetComponent<AudioSource>().Play();
         
         switch (m_Action) {
-            case "MainMenu":
-                SceneManager.UnloadScene(SceneManager.GetActiveScene().name);
-                SceneManager.LoadScene(_mainMenuSceneName, LoadSceneMode.Single);
+			case "MainMenu":
+				SceneManager.UnloadScene (SceneManager.GetActiveScene ().name);
+				SceneManager.LoadScene (_mainMenuSceneName, LoadSceneMode.Single);
+				analytics.ExitSession ();
                 break;
             case "Retry":
                 Persistence.SelectedGameMode = SceneManager.GetActiveScene().name;
